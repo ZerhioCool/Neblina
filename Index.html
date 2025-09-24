@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neblina | AI Model Solutions for Enterprise</title>
+    <meta name="description" content="Neblina provides cutting-edge AI model solutions with flexible in-house and on-premise deployment options for businesses.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#7380AD",
+                        secondary: "#5A668F",
+                        accent: "#8C99C4"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        .language-selector:hover .language-dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="flex items-center space-x-4">
+                        <img src="assets/NeblinatechLogov4.png" alt="Neblina Tech Logo" class="w-30 h-20">
+                        <img src="assets/NeblinaName.png" alt="Neblina Name" class="h-10">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#solutions" class="text-gray-600 hover:text-primary transition" data-en="Solutions" data-es="Soluciones" data-fr="Solutions">Solutions</a>
+                    <a href="services.html" class="text-gray-600 hover:text-primary transition" data-en="Services" data-es="Servicios" data-fr="Services">Services</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary transition" data-en="About" data-es="Nosotros" data-fr="À propos">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition" data-en="Contact" data-es="Contacto" data-fr="Contact">Contact</a>
+                    <div class="relative language-selector">
+                        <button id="currentLanguage" class="flex items-center text-gray-600 hover:text-primary transition px-2 py-1 border rounded">
+                            <span>EN</span>
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="language-dropdown absolute right-0 mt-1 w-20 bg-white rounded-md shadow-lg py-1 hidden">
+                            <button data-lang="en" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><span role="img" aria-label="English Flag">🇺🇸</span> EN</button>
+                            <button data-lang="es" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><span role="img" aria-label="Spanish Flag">🇪🇸</span> ES</button>
+                            <button data-lang="fr" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><span role="img" aria-label="French Flag">🇫🇷</span> FR</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6" data-en="AI Solutions Without the Cloud Constraints" data-es="Soluciones de IA Sin las Limitaciones de la Nube" data-fr="Solutions d'IA Sans les Contraintes du Cloud">AI Solutions Without the Cloud Constraints</h1>
+                    <p class="text-xl mb-8" data-en="Enterprise-grade AI models deployed in-house or on-premise for maximum control, security, and performance." data-es="Modelos de IA de nivel empresarial implementados in situ o en las instalaciones para un máximo control, seguridad y rendimiento." data-fr="Modèles d'IA de niveau entreprise déployés en interne ou sur site pour un contrôle, une sécurité et des performances maximaux.">Enterprise-grade AI models deployed in-house or on-premise for maximum control, security, and performance.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition" data-en="Get Started" data-es="Empezar" data-fr="Commencer">Get Started</a>
+                        <a href="#solutions" class="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-primary transition" data-en="Learn More" data-es="Saber Más" data-fr="En savoir plus">Learn More</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/600/400?random=1" alt="AI technology illustration showing neural networks and data processing" class="rounded-lg shadow-xl" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-gray-800" data-en="Our AI Solutions" data-es="Nuestras Soluciones de IA" data-fr="Nos Solutions d'IA">Our AI Solutions</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-server text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800" data-en="On-Premise AI" data-es="IA en las Instalaciones" data-fr="IA Sur Site">On-Premise AI</h3>
+                    <p class="text-gray-600" data-en="Deploy our AI models directly in your infrastructure for complete data control and security compliance." data-es="Implemente nuestros modelos de IA directamente en su infraestructura para un control total de los datos y cumplimiento de seguridad." data-fr="Déployez nos modèles d'IA directement dans votre infrastructure pour un contrôle total des données et une conformité de sécurité.">Deploy our AI models directly in your infrastructure for complete data control and security compliance.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-home text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800" data-en="In-House AI" data-es="IA Interna" data-fr="IA Interne">In-House AI</h3>
+                    <p class="text-gray-600" data-en="Custom AI solutions developed and maintained by our team within your organization's environment." data-es="Soluciones de IA personalizadas desarrolladas y mantenidas por nuestro equipo dentro del entorno de su organización." data-fr="Solutions d'IA personnalisées développées et maintenues par notre équipe dans l'environnement de votre organisation.">Custom AI solutions developed and maintained by our team within your organization's environment.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800" data-en="Hybrid Models" data-es="Modelos Híbridos" data-fr="Modèles Hybrides">Hybrid Models</h3>
+                    <p class="text-gray-600" data-en="Flexible solutions combining both on-premise and in-house components tailored to your needs." data-es="Soluciones flexibles que combinan componentes en las instalaciones e internos adaptados a sus necesidades." data-fr="Solutions flexibles combinant des composants sur site et internes adaptés à vos besoins.">Flexible solutions combining both on-premise and in-house components tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-gray-800" data-en="Our Services" data-es="Nuestros Servicios" data-fr="Nos Services">Our Services</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="flex space-x-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-brain text-primary"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800" data-en="Custom AI Model Development" data-es="Desarrollo de Modelos de IA Personalizados" data-fr="Développement de Modèles d'IA Personnalisés">Custom AI Model Development</h3>
+                        <p class="text-gray-600" data-en="We build specialized AI models tailored to your business requirements and data environment." data-es="Construimos modelos de IA especializados adaptados a los requisitos de su negocio y entorno de datos." data-fr="Nous construisons des modèles d'IA spécialisés adaptés à vos besoins commerciaux et à votre environnement de données.">We build specialized AI models tailored to your business requirements and data environment.</p>
+                    </div>
+                </div>
+                <div class="flex space-x-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-tools text-primary"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800" data-en="Deployment & Integration" data-es="Implementación e Integración" data-fr="Déploiement & Intégration">Deployment & Integration</h3>
+                        <p class="text-gray-600" data-en="Seamless integration of AI models into your existing systems and workflows." data-es="Integración perfecta de modelos de IA en sus sistemas y flujos de trabajo existentes." data-fr="Intégration transparente des modèles d'IA dans vos systèmes et flux de travail existants.">Seamless integration of AI models into your existing systems and workflows.</p>
+                    </div>
+                </div>
+                <div class="flex space-x-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-chart-line text-primary"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800" data-en="Performance Optimization" data-es="Optimización del Rendimiento" data-fr="Optimisation des Performances">Performance Optimization</h3>
+                        <p class="text-gray-600" data-en="Continuous monitoring and improvement of model accuracy and efficiency." data-es="Monitoreo continuo y mejora de la precisión y eficiencia del modelo." data-fr="Surveillance continue et amélioration de la précision et de l'efficacité du modèle.">Continuous monitoring and improvement of model accuracy and efficiency.</p>
+                    </div>
+                </div>
+                <div class="flex space-x-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-primary"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800" data-en="Security & Compliance" data-es="Seguridad y Cumplimiento" data-fr="Sécurité & Conformité">Security & Compliance</h3>
+                        <p class="text-gray-600" data-en="Enterprise-grade security measures and regulatory compliance assurance." data-es="Medidas de seguridad de nivel empresarial y garantía de cumplimiento normativo." data-fr="Mesures de sécurité de niveau entreprise et assurance de conformité réglementaire.">Enterprise-grade security measures and regulatory compliance assurance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="services.html" class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition" data-en="View All Services" data-es="Ver Todos los Servicios" data-fr="Voir Tous les Services">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://picsum.photos/500/350?random=2" alt="Neblina team working in a modern office environment" class="rounded-lg shadow-md" loading="lazy">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800" data-en="About Neblina" data-es="Sobre Neblina" data-fr="À propos de Neblina">About Neblina</h2>
+                    <p class="text-gray-600 mb-6" data-en="Neblina was founded with the vision of bringing enterprise-grade AI solutions to organizations that require complete control over their data and infrastructure." data-es="Neblina se fundó con la visión de llevar soluciones de IA de nivel empresarial a organizaciones que requieren control total sobre sus datos e infraestructura." data-fr="Neblina a été fondée avec la vision d'apporter des solutions d'IA de niveau entreprise aux organisations qui nécessitent un contrôle total sur leurs données et leur infrastructure.">Neblina was founded with the vision of bringing enterprise-grade AI solutions to organizations that require complete control over their data and infrastructure.</p>
+                    <p class="text-gray-600 mb-6" data-en="We specialize in developing and deploying AI models that operate entirely within your environment, eliminating the need for cloud dependencies while maintaining cutting-edge performance." data-es="Nos especializamos en desarrollar e implementar modelos de IA que operan completamente dentro de su entorno, eliminando la necesidad de dependencias en la nube mientras mantenemos un rendimiento de vanguardia." data-fr="Nous nous spécialisons dans le développement et le déploiement de modèles d'IA qui fonctionnent entièrement dans votre environnement, éliminant le besoin de dependances en la nube mientras mantenemos un rendimiento de vanguardia.">We specialize in developing and deploying AI models that operate entirely within your environment, eliminating the need for cloud dependencies while maintaining cutting-edge performance.</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-primary bg-opacity-10 p-4 rounded-lg">
+                            <h4 class="font-semibold text-primary mb-2">50+</h4>
+                            <p class="text-gray-600 text-sm" data-en="Enterprise Clients" data-es="Clientes Empresariales" data-fr="Clients Entreprise">Enterprise Clients</p>
+                        </div>
+                        <div class="bg-primary bg-opacity-10 p-4 rounded-lg">
+                            <h4 class="font-semibold text-primary mb-2">100%</h4>
+                            <p class="text-gray-600 text-sm" data-en="On-Premise Solutions" data-es="Soluciones On-Premise" data-fr="Solutions Sur Site">On-Premise Solutions</p>
+                        </div>
+                        <div class="bg-primary bg-opacity-10 p-4 rounded-lg">
+                            <h4 class="font-semibold text-primary mb-2">24/7</h4>
+                            <p class="text-gray-600 text-sm" data-en="Support" data-es="Soporte" data-fr="Support">Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-sm p-8 md:p-12">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-800" data-en="Get in Touch" data-es="Contáctenos" data-fr="Contactez-nous">Get in Touch</h2>
+                <form class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2" data-en="Name" data-es="Nombre" data-fr="Nom">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="company" class="block text-gray-700 mb-2" data-en="Company" data-es="Empresa" data-fr="Entreprise">Company</label>
+                        <input type="text" id="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="message" class="block text-gray-700 mb-2" data-en="How can we help?" data-es="¿Cómo podemos ayudarle?" data-fr="Comment pouvons-nous vous aider?">How can we help?</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                    </div>
+                    <div class="md:col-span-2">
+                        <button type="submit" class="w-full bg-primary text-white py-3 px-6 rounded-lg font-medium hover:bg-secondary transition" data-en="Submit Inquiry" data-es="Enviar Consulta" data-fr="Soumettre une Demande">Submit Inquiry</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="assets/NeblinatechLogov4.png" alt="Neblina Tech Logo" class="w-20 h-10">
+                        <img src="assets/NeblinaNameGris.png" alt="Neblina Name" class="h-6">
+                    </div>
+                    <p class="text-gray-400" data-en="Enterprise AI solutions without cloud constraints." data-es="Soluciones de IA empresarial sin limitaciones de la nube." data-fr="Solutions d'IA d'entreprise sans contraintes cloud.">Enterprise AI solutions without cloud constraints.</p>
+                    <div class="mt-4 flex space-x-2">
+                        <button data-lang="en" class="px-2 py-1 text-xs bg-gray-700 rounded hover:bg-gray-600">EN</button>
+                        <button data-lang="es" class="px-2 py-1 text-xs bg-gray-700 rounded hover:bg-gray-600">ES</button>
+                        <button data-lang="fr" class="px-2 py-1 text-xs bg-gray-700 rounded hover:bg-gray-600">FR</button>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-en="Solutions" data-es="Soluciones" data-fr="Solutions">Solutions</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition" data-en="On-Premise AI" data-es="IA en las Instalaciones" data-fr="IA Sur Site">On-Premise AI</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition" data-en="In-House AI" data-es="IA Interna" data-fr="IA Interne">In-House AI</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition" data-en="Hybrid Models" data-es="Modelos Híbridos" data-fr="Modèles Hybrides">Hybrid Models</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-en="Company" data-es="Empresa" data-fr="Entreprise">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition" data-en="About Us" data-es="Nosotros" data-fr="À propos">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition" data-en="Careers" data-es="Carreras" data-fr="Carrières">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition" data-en="Blog" data-es="Blog" data-fr="Blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-en="Connect" data-es="Conectar" data-fr="Se Connecter">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="text-gray-400">info@neblina.ai</p>
+                    <p class="text-gray-400">+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p data-en="&copy; 2023 Neblina AI Solutions. All rights reserved." data-es="&copy; 2023 Neblina Soluciones de IA. Todos los derechos reservados." data-fr="&copy; 2023 Neblina Solutions d'IA. Tous droits réservés.">&copy; 2023 Neblina AI Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language switching functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            let currentLanguage = 'en';
+            
+            // Set language
+            function setLanguage(lang) {
+                currentLanguage = lang;
+                document.documentElement.lang = lang;
+                document.getElementById('currentLanguage').innerHTML = `<span role="img" aria-label="${lang} flag">${getFlagEmoji(lang)}</span> ${lang.toUpperCase()} <i class="fas fa-chevron-down ml-1 text-xs"></i>`;
+                
+                // Update all elements with data attributes
+                document.querySelectorAll('[data-en]').forEach(element => {
+                    if (element.dataset[lang]) {
+                        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                            element.placeholder = element.dataset[lang];
+                        } else {
+                            element.textContent = element.dataset[lang];
+                        }
+                    }
+                });
+                
+                // Store preference
+                localStorage.setItem('preferredLanguage', lang);
+            }
+
+            function getFlagEmoji(lang) {
+                switch(lang) {
+                    case 'en': return '🇺🇸';
+                    case 'es': return '🇪🇸';
+                    case 'fr': return '🇫🇷';
+                    default: return '';
+                }
+            }
+            
+            // Language selector buttons
+            document.querySelectorAll('[data-lang]').forEach(button => {
+                button.addEventListener('click', function() {
+                    setLanguage(this.dataset.lang);
+                });
+            });
+            
+            // Check for stored language preference
+            const preferredLanguage = localStorage.getItem('preferredLanguage');
+            if (preferredLanguage) {
+                setLanguage(preferredLanguage);
+            }
+            
+            // Mobile menu toggle functionality
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            mobileMenuButton.addEventListener('click', function() {
+                console.log('Mobile menu would open here');
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neblina | Our Services</title>
+    <meta name="description" content="Detailed services offered by Neblina AI Solutions">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#7380AD",
+                        secondary: "#5A668F",
+                        accent: "#8C99C4"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        .language-selector:hover .language-dropdown {
+            display: block;
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="flex items-center space-x-4">
+                        <img src="assets/NeblinatechLogov4.png" alt="Neblina Tech Logo" class="w-30 h-20">
+                        <img src="assets/NeblinaName.png" alt="Neblina Name" class="h-10">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#solutions" class="text-gray-600 hover:text-primary transition" data-en="Solutions" data-es="Soluciones" data-fr="Solutions">Solutions</a>
+                    <a href="services.html" class="text-primary font-medium" data-en="Services" data-es="Servicios" data-fr="Services">Services</a>
+                    <a href="index.html#about" class="text-gray-600 hover:text-primary transition" data-en="About" data-es="Nosotros" data-fr="À propos">About</a>
+                    <a href="index.html#contact" class="text-gray-600 hover:text-primary transition" data-en="Contact" data-es="Contacto" data-fr="Contact">Contact</a>
+                    <div class="relative language-selector">
+                        <button id="currentLanguage" class="flex items-center text-gray-600 hover:text-primary transition px-2 py-1 border rounded">
+                            <span>EN</span>
+                            <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="language-dropdown absolute right-0 mt-1 w-20 bg-white rounded-md shadow-lg py-1 hidden">
+                            <button data-lang="en" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><span role="img" aria-label="English Flag">🇺🇸</span> EN</button>
+                            <button data-lang="es" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><span role="img" aria-label="Spanish Flag">🇪🇸</span> ES</button>
+                            <button data-lang="fr" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><span role="img" aria-label="French Flag">🇫🇷</span> FR</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6" data-en="Our AI Services" data-es="Nuestros Servicios de IA" data-fr="Nos Services d'IA">Our AI Services</h1>
+            <p class="text-xl max-w-3xl mx-auto" data-en="Comprehensive AI solutions tailored to your business needs, deployed in your environment for maximum control and security." data-es="Soluciones de IA integrales adaptadas a las necesidades de su negocio, implementadas en su entorno para un máximo control y seguridad." data-fr="Des solutions d'IA complètes adaptées à vos besoins métier, déployées dans votre environnement pour un contrôle et une sécurité maximum.">Comprehensive AI solutions tailored to your business needs, deployed in your environment for maximum control and security.</p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="service-card bg-gray-50 rounded-xl overflow-hidden shadow-md">
+                    <img src="assets/Servicios 1.jpg" 
+                         alt="AI development team working on neural network models" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-brain text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800" data-en="Custom AI Model Development" data-es="Desarrollo de Modelos de IA Personalizados" data-fr="Développement de Modèles d'IA Personnalisés">Custom AI Model Development</h3>
+                        <p class="text-gray-600 mb-6" data-en="We design and build AI models specifically for your business needs, trained on your data to deliver optimal results." data-es="Diseñamos y construimos modelos de IA específicamente para las necesidades de su negocio, entrenados con sus datos para ofrecer resultados óptimos." data-fr="Nous concevons et construisons des modèles d'IA spécifiquement pour les besoins de votre entreprise, formés sur vos données pour fournir des résultats optimaux.">We design and build AI models specifically for your business needs, trained on your data to deliver optimal results.</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span data-en="Tailored machine learning and deep learning models" data-es="Modelos de aprendizaje automático y aprendizaje profundo a medida" data-fr="Modèles d'apprentissage automatique et d'apprentissage profond sur mesure">Tailored machine learning and deep learning models</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span data-en="Domain-specific model training" data-es="Entrenamiento de modelos específicos del dominio" data-fr="Formation de modèles spécifiques au domaine">Domain-specific model training</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span data-en="Continuous model improvement" data-es="Mejora continua del modelo" data-fr="Amélioration continue des modèles">Continuous model improvement</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition" data-en="Get Started" data-es="Empezar" data-fr="Commencer">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="service-card bg-gray-50 rounded-xl overflow-hidden shadow-md">
+                    <img src="assets\Neblina nube tablero conecciones.jpg"
+                         alt="Server racks in a data center showing AI model deployment infrastructure" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-tools text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800" data-en="Deployment & Integration" data-es="Implementación e Integración" data-fr="Déploiement & Intégration">Deployment & Integration</h3>
+                        <p class="text-gray-600 mb-6" data-en="Seamless implementation of AI models into your existing infrastructure with minimal disruption." data-es="Implementación sin fisuras de modelos de IA en su infraestructura existente con una interrupción mínima." data-fr="Mise en œuvre transparente des modèles d'IA dans votre infrastructure existante avec une interruption minimale.">Seamless implementation of AI models into your existing infrastructure with minimal disruption.</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span data-en="On-premise or in-house deployment" data-es="Implementación en las instalaciones o interna" data-fr="Déploiement sur site ou en interne">On-premise or in-house deployment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span data-en="API and system integration" data-es="Integración de API y sistemas" data-fr="Intégration d'API et de systèmes">API and system integration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span data-en="Legacy system compatibility" data-es="Compatibilidad con sistemas heredados" data-fr="Compatibilité avec les systèmes existants">Legacy system compatibility</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition" data-en="Get Started" data-es="Empezar" data-fr="Commencer">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="service-card bg-gray-50 rounded-xl overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+                         alt="Performance metrics dashboard showing AI model optimization results" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-chart-line text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800" data-en="Performance Optimization" data-es="Optimización del Rendimiento" data-fr="Optimisation des Performances">Performance Optimization</h3>
+                        <p class="text-gray-600 mb-6" data-en="Continuous monitoring and enhancement of your AI models to ensure peak performance." data-es="Supervisión y mejora continuas de sus modelos de IA para garantizar un rendimiento óptimo." data-fr="Surveillance et amélioration continues de vos modèles d'IA pour garantir des performances optimales.">Continuous monitoring and enhancement of your AI models to ensure peak performance.</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span data-en="Model accuracy improvements" data-es="Mejoras en la precisión del modelo" data-fr="Améliorations de la précision des modèles">Model accuracy improvements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span data-en="Computational efficiency tuning" data-es="Ajuste de la eficiencia computacional" data-fr="Optimisation de l'efficacité de calcul">Computational efficiency tuning</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span data-en="Resource utilization optimization" data-es="Optimización del uso de recursos" data-fr="Optimisation de l'utilisation des ressources">Resource utilization optimization</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition" data-en="Get Started" data-es="Empezar" data-fr="Commencer">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="service-card bg-gray-50 rounded-xl overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+                         alt="Digital security concept with lock icon and binary code background" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-shield-alt text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800" data-en="Security & Compliance" data-es="Seguridad y Cumplimiento" data-fr="Sécurité & Conformité">Security & Compliance</h3>
+                        <p class="text-gray-600 mb-6" data-en="Enterprise-grade security measures to protect your data and ensure regulatory compliance." data-es="Medidas de seguridad de nivel empresarial para proteger sus datos y garantizar el cumplimiento normativo." data-fr="Des mesures de sécurité de niveau entreprise pour protéger vos données et garantir la conformité réglementaire.">Enterprise-grade security measures to protect your data and ensure regulatory compliance.</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span data-en="Data encryption and access controls" data-es="Cifrado de datos y controles de acceso" data-fr="Chiffrement des données et contrôles d'accès">Data encryption and access controls</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span data-en="GDPR, HIPAA, and industry-specific compliance" data-es="Cumplimiento de GDPR, HIPAA y normativas específicas del sector" data-fr="Conformité RGPD, HIPAA et spécifiques à l'industrie">GDPR, HIPAA, and industry-specific compliance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span data-en="Regular security audits" data-es="Auditorías de seguridad regulares" data-fr="Audits de sécurité réguliers">Regular security audits</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition" data-en="Get Started" data-es="Empezar" data-fr="Commencer">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-gray-800" data-en="Additional Services" data-es="Servicios Adicionales" data-fr="Services Additionnels">Additional Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800" data-en="AI Training & Support" data-es="Capacitación y Soporte de IA" data-fr="Formation et Support IA">AI Training & Support</h3>
+                    <p class="text-gray-600" data-en="Comprehensive training programs for your team to effectively use and maintain AI solutions." data-es="Programas de capacitación completos para que su equipo utilice y mantenga eficazmente las soluciones de IA." data-fr="Des programmes de formation complets pour que votre équipe utilise et entretienne efficacement les solutions d'IA.">Comprehensive training programs for your team to effectively use and maintain AI solutions.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-database text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800" data-en="Data Strategy" data-es="Estrategia de Datos" data-fr="Stratégie de Données">Data Strategy</h3>
+                    <p class="text-gray-600" data-en="Help with data collection, cleaning, and preparation to maximize your AI's potential." data-es="Ayuda con la recopilación, limpieza y preparación de datos para maximizar el potencial de su IA." data-fr="Aide à la collecte, au nettoyage et à la préparation des données pour maximiser le potentiel de votre IA.">Help with data collection, cleaning, and preparation to maximize your AI's potential.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-project-diagram text-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800" data-en="AI Roadmapping" data-es="Hoja de Ruta de IA" data-fr="Feuille de Route IA">AI Roadmapping</h3>
+                    <p class="text-gray-600" data-en="Strategic planning to integrate AI into your long-term business objectives." data-es="Planificación estratégica para integrar la IA en sus objetivos de negocio a largo plazo." data-fr="Planification stratégique pour intégrer l'IA dans vos objectifs commerciaux à long terme.">Strategic planning to integrate AI into your long-term business objectives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6" data-en="Ready to Transform Your Business with AI?" data-es="¿Listo para Transformar su Negocio con IA?" data-fr="Prêt à Transformer votre Entreprise avec l'IA ?">Ready to Transform Your Business with AI?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto" data-en="Our team of experts is ready to help you implement AI solutions that deliver real business value." data-es="Nuestro equipo de expertos está listo para ayudarle a implementar soluciones de IA que aporten un valor real a su negocio." data-fr="Notre équipe d'experts est prête à vous aider à mettre en œuvre des solutions d'IA qui apportent une réelle valeur ajoutée à votre entreprise.">Our team of experts is ready to help you implement AI solutions that deliver real business value.</p>
+            <a href="index.html#contact" class="inline-block bg-white text-primary px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition text-lg" data-en="Schedule a Consultation" data-es="Programar una Consulta" data-fr="Planifier une Consultation">Schedule a Consultation</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="assets/NeblinatechLogov4.png" alt="Neblina Tech Logo" class="w-20 h-10">
+                        <img src="assets/NeblinaName.png" alt="Neblina Name" class="h-6">
+                    </div>
+                    <p class="text-gray-400" data-en="Enterprise AI solutions without cloud constraints." data-es="Soluciones de IA empresarial sin limitaciones de la nube." data-fr="Solutions d'IA d'entreprise sans contraintes cloud.">Enterprise AI solutions without cloud constraints.</p>
+                    <div class="mt-4 flex space-x-2">
+                        <button data-lang="en" class="px-2 py-1 text-xs bg-gray-700 rounded hover:bg-gray-600"><span role="img" aria-label="English Flag">🇺🇸</span> EN</button>
+                        <button data-lang="es" class="px-2 py-1 text-xs bg-gray-700 rounded hover:bg-gray-600"><span role="img" aria-label="Spanish Flag">🇪🇸</span> ES</button>
+                        <button data-lang="fr" class="px-2 py-1 text-xs bg-gray-700 rounded hover:bg-gray-600"><span role="img" aria-label="French Flag">🇫🇷</span> FR</button>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-en="Solutions" data-es="Soluciones" data-fr="Solutions">Solutions</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#solutions" class="text-gray-400 hover:text-white transition" data-en="On-Premise AI" data-es="IA en las Instalaciones" data-fr="IA Sur Site">On-Premise AI</a></li>
+                        <li><a href="index.html#solutions" class="text-gray-400 hover:text-white transition" data-en="In-House AI" data-es="IA Interna" data-fr="IA Interne">In-House AI</a></li>
+                        <li><a href="index.html#solutions" class="text-gray-400 hover:text-white transition" data-en="Hybrid Models" data-es="Modelos Híbridos" data-fr="Modèles Hybrides">Hybrid Models</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-en="Company" data-es="Empresa" data-fr="Entreprise">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white transition" data-en="About Us" data-es="Nosotros" data-fr="À propos">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition" data-en="Careers" data-es="Carreras" data-fr="Carrières">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition" data-en="Blog" data-es="Blog" data-fr="Blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4" data-en="Connect" data-es="Conectar" data-fr="Se Connecter">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="text-gray-400">info@neblina.ai</p>
+                    <p class="text-gray-400">+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p data-en="&copy; 2023 Neblina AI Solutions. All rights reserved." data-es="&copy; 2023 Neblina Soluciones de IA. Todos los derechos reservados." data-fr="&copy; 2023 Neblina Solutions d'IA. Tous droits réservés.">&copy; 2023 Neblina AI Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language switching functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            let currentLanguage = 'en';
+            
+            // Set language
+            function setLanguage(lang) {
+                currentLanguage = lang;
+                document.documentElement.lang = lang;
+                document.getElementById('currentLanguage').innerHTML = `<span role="img" aria-label="${lang} flag">${getFlagEmoji(lang)}</span> ${lang.toUpperCase()} <i class="fas fa-chevron-down ml-1 text-xs"></i>`;
+                
+                // Update all elements with data attributes
+                document.querySelectorAll('[data-en]').forEach(element => {
+                    if (element.dataset[lang]) {
+                        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                            element.placeholder = element.dataset[lang];
+                        } else {
+                            element.textContent = element.dataset[lang];
+                        }
+                    }
+                });
+                
+                // Store preference
+                localStorage.setItem('preferredLanguage', lang);
+            }
+
+            function getFlagEmoji(lang) {
+                switch(lang) {
+                    case 'en': return '🇺🇸';
+                    case 'es': return '🇪🇸';
+                    case 'fr': return '🇫🇷';
+                    default: return '';
+                }
+            }
+            
+            // Language selector buttons
+            document.querySelectorAll('[data-lang]').forEach(button => {
+                button.addEventListener('click', function() {
+                    setLanguage(this.dataset.lang);
+                });
+            });
+            
+            // Check for stored language preference
+            const preferredLanguage = localStorage.getItem('preferredLanguage');
+            if (preferredLanguage) {
+                setLanguage(preferredLanguage);
+            }
+            
+            // Mobile menu toggle functionality
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            mobileMenuButton.addEventListener('click', function() {
+                console.log('Mobile menu would open here');
+            });
+        });
+    </script>
+</body>
+</html>
